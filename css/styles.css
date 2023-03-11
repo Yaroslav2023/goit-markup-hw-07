@@ -24,12 +24,6 @@ img {
     display: flex;
 }
 
-.container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -62,8 +56,55 @@ body {
     color: var(--blue-clr);
 }
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 426px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1159px;
+    }
+}
+
+
 /* ========HEADER======== */
-.header-border {
+
+.mobile-menu-burger-icon {
+    stroke: #2E2F42;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-list-wrap {
+        display: none;
+    }
+
+    .address-wrap {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/* .header-border {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #E7E9FC;
@@ -142,10 +183,10 @@ body {
     margin-right: 76px;
 }
 
-.mail-addres {}
+.mail-addres {} */
 
 /*    ========================  HERO ========================*/
-
+/* 
 .hero {
     background: var(--secondary-clr-text);
     padding-top: 188px;
@@ -196,11 +237,12 @@ body {
 .hero-button:focus {
     background-color: var(--action-clr);
 }
-
+ */
 
 
 /* ===========Section strategy=============== */
-.strategy-title {
+
+/* .strategy-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -233,11 +275,11 @@ body {
     background-color: var(--write-logo-footer);
     border-radius: 4px;
 }
-
+ */
 
 
 /* ===============OUR WORKS ==========================*/
-.title {
+/* .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -254,11 +296,11 @@ body {
 .work-items {
     display: flex;
     gap: 24px;
-}
+} */
 
 
 /* =======================Specialists =======================*/
-.team-section {
+/* .team-section {
     background-color: var(--write-logo-footer);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -324,12 +366,12 @@ body {
 
 .social-link {
     fill: var(--primary-write);
-}
+} */
 
 
 /*    =================CUSTOMERS WRAP========== */
 
-.customers-wrap {
+/* .customers-wrap {
     padding-top: 130px;
     padding-bottom: 130px;
 
@@ -367,11 +409,12 @@ body {
 .customers-icon-link:focus {
     border: 1px solid var(--action-clr);
     fill: var(--action-clr)
-}
+} */
 
 
 /* ================Footer================== */
-.footer {
+
+/* .footer {
     background-color: var(--secondary-clr-text);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -508,11 +551,11 @@ body {
     margin-left: 16px;
     background-image: url("../images/icon-button.svg");
     background-size: contain;
-}
+} */
 
 /*================== Page PORTFOLIO ======================= */
 
-.portfolio-wrap {
+/* .portfolio-wrap {
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -647,13 +690,13 @@ body {
 .work-example:hover .overlay-text,
 .work-example:focus .overlay-text {
     transform: translate(0, 0);
-}
+} */
 
 
 
 /* =================MODAL=============== */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -956,4 +999,4 @@ body {
 .form-button-send:hover,
 .form-button-send:focus {
     background-color: var(--action-clr);
-}
+} */
