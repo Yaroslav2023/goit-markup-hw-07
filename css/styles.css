@@ -73,6 +73,14 @@ body {
     .container {
         width: 766px;
     }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,20 +92,35 @@ body {
 
 /* ========HEADER======== */
 
-.mobile-menu-burger-icon {
-    stroke: #2E2F42;
-}
-
 @media screen and (max-width: 767px) {
     .menu-list-wrap {
         display: none;
     }
 
-    .address-wrap {
+    .adress-header-container {
         display: none;
     }
-
 }
+
+.header-border {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 22px;
+}
+
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
@@ -140,8 +163,6 @@ body {
 }
 
 .contacts {
-    font-family: 'Roboto';
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     color: var(--primary-clr-text);
@@ -183,7 +204,156 @@ body {
     margin-right: 76px;
 }
 
-.mail-addres {} */
+/* ===============MOBILE MENU============ */
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--primary-write);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity var(--transition-dur-and-funct), visibility var(--transition-dur-and-funct);
+    }
+
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-menu-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--write-text-footer);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+
+        transition: background-color var(--transition-dur-and-funct);
+    }
+
+    .mobile-menu-close-btn:hover,
+    .mobile-menu-close-btn:focus {
+        background-color: var(--action-clr);
+    }
+
+    .mobile-menu-close-icon {
+        transition: fill var(--transition-dur-and-funct);
+    }
+
+    .mobile-menu-close-btn:hover .mobile-menu-close-icon,
+    .mobile-menu-close-btn:focus .mobile-menu-close-icon {
+        fill: var(--primary-write);
+    }
+
+    .mobile-menu-container {
+        position: relative;
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
+    .mobile-menu-list-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 284px;
+    }
+
+    .mobile-menu-item {
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        color: var(--secondary-clr-text);
+    }
+
+    .mobile-menu-item:hover,
+    .mobile-menu-item:focus {
+        color: var(--action-clr);
+    }
+
+    .mobile-address-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mobile-menu-contacts-phone {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        color: var(--primary-clr-text);
+        text-decoration: none;
+    }
+
+    .mobile-menu-contacts-phone:hover,
+    .mobile-menu-contacts-phone:focus {
+        color: var(--action-clr);
+    }
+
+    .mobile-menu-mail {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--primary-clr-text);
+    }
+
+    .mobile-menu-mail:hover,
+    .mobile-menu-mail:focus {
+        color: var(--action-clr);
+    }
+
+    .menu-address-container {
+        margin-bottom: 48px;
+    }
+
+
+    .menu-social-link-wrap {
+        display: flex;
+        gap: 56px;
+    }
+
+    .menu-social-link-lists {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--blue-clr);
+        justify-content: center;
+        align-items: center;
+        transition: background-color var(--transition-dur-and-funct);
+    }
+
+    .menu-social-link-lists:hover,
+    .menu-social-link-lists:hover {
+        background-color: var(--action-clr)
+    }
+
+
+
+    .menu-social-link {
+        fill: var(--primary-write);
+    }
+}
+
+
+
 
 /*    ========================  HERO ========================*/
 /* 
