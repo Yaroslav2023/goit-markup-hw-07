@@ -28,14 +28,21 @@
             ><span class="logo-first">Web</span>Studio</a
           >
           <ul class="list menu-list-wrap">
-            <li><a href="./index.html" class="link menu-item">Studio</a></li>
             <li>
-              <a href="" class="link menu-item menu-item-active">Portfolio</a>
+              <a href="" class="link menu-item menu-item-active">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link menu-item">Portfolio</a>
             </li>
             <li><a href="" class="link menu-item">Contacts</a></li>
           </ul>
         </nav>
-        <address>
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <address class="adress-header-container">
           <ul class="list address-wrap">
             <li>
               <a
@@ -51,6 +58,74 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu-list-wrap">
+            <li>
+              <a href="" class="link mobile-menu-item">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link mobile-menu-item"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link mobile-menu-item">Contacts</a></li>
+          </ul>
+          <address class="menu-address-container">
+            <ul class="list mobile-address-wrap">
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="link mobile-menu-contacts-phone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link mobile-menu-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list menu-social-link-wrap">
+            <li>
+              <a href="" class="link menu-social-link-lists"
+                ><svg class="menu-social-link" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link menu-social-link-lists"
+                ><svg class="menu-social-link" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link menu-social-link-lists"
+                ><svg class="menu-social-link" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link menu-social-link-lists"
+                ><svg class="menu-social-link" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -73,9 +148,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project1.jpg"
+                    srcset="./images/mobile/project1-2x.jpg"
+                    src="./images/mobile/project1.jpg"
                     alt="Client bank website"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -93,9 +169,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project2.jpg"
+                    srcset="./images/mobile/project2-2x.jpg"
+                    src="./images/mobile/project2.jpg"
                     alt="Payment application"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -113,9 +190,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project3.jpg"
+                    srcset="./images/mobile/project3-2x.jpg"
+                    src="./images/mobile/project3.jpg"
                     alt="App on phone and laptop"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -133,9 +211,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project4.jpg"
+                    srcset="./images/mobile/project4-2x.jpg"
+                    src="./images/mobile/project4.jpg"
                     alt="Phone in front of the driver"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -153,9 +232,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project5.jpg"
+                    srcset="./images/mobile/project5-2x.jpg"
+                    src="./images/mobile/project5.jpg"
                     alt="Screensaver on phone"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -173,9 +253,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project6.jpg"
+                    srcset="./images/mobile/project6-2x.jpg"
+                    src="./images/mobile/project6.jpg"
                     alt="Girl with phone"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -193,9 +274,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project7.jpg"
+                    srcset="./images/mobile/project7-2x.jpg"
+                    src="./images/mobile/project7.jpg"
                     alt="Picture layouts"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -213,9 +295,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project8.jpg"
+                    srcset="./images/mobile/project8-2x.jpg"
+                    src="./images/mobile/project8.jpg"
                     alt="Bag with vegetables and fruits"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -233,9 +316,10 @@
               <a href="" class="link work-example-link">
                 <div class="work-example-overlay">
                   <img
-                    src="./images/project9.jpg"
+                    srcset="./images/mobile/project9-2x.jpg"
+                    src="./images/mobile/project9.jpg"
                     alt="Coffee preparation"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -315,5 +399,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
