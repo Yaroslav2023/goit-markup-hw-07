@@ -1060,6 +1060,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     overflow: hidden;
 }
 
+.portfolio-project-img {
+    width: 396px;
+    height: 280px;
+}
+
 .overlay-text {
     position: absolute;
     display: flex;
@@ -1101,7 +1106,46 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
     .portfolio-items {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        gap: 0;
+
+    }
+
+    .work-example {
+        width: 356px;
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+
+    .work-example:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .work-example:nth-child(2n) {
+        margin-right: 0px;
+    }
+
+    .work-example:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .portfolio-project-img {
+        width: 356px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .work-example {
+        width: 360px;
+    }
+
+    .portfolio-project-img {
+        width: 360px;
     }
 }
 
