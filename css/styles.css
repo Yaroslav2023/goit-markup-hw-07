@@ -264,6 +264,7 @@ body {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        overflow-y: scroll;
         transition: opacity var(--transition-dur-and-funct), visibility var(--transition-dur-and-funct);
     }
 
@@ -539,11 +540,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     margin-bottom: 8px;
 }
 
+.strategy-items .item {
+    margin-bottom: 72px;
+}
+
+.strategy-items>.item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
 .strategy-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 72px;
+
 }
 
 .strategy-descr-wrap {
@@ -554,7 +563,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
     .strategy-items .item {
         width: 356px;
+        margin-bottom: 72px;
     }
+
+    .strategy-items>.item:nth-child(n+2) {
+        margin-bottom: 0;
+    }
+
 
     .strategy-items {
         display: flex;
@@ -592,6 +607,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
     .strategy-items .item {
         width: 264px;
+        margin-bottom: 0;
     }
 
     .strategy-descr-wrap {
@@ -606,6 +622,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 
     .strategy-text {
+        font-weight: 400;
         margin-bottom: 0;
     }
 }
@@ -646,8 +663,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 /* ===============OUR WORKS ==========================*/
 
 /* =======================Specialists =======================*/
-.team-section-container {
+
+.team-section {
     background-color: var(--write-logo-footer);
+}
+
+.team-section-container {
     padding-top: 96px;
     padding-left: auto;
     padding-right: auto;
@@ -743,11 +764,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .specialist-wrap {
         margin-left: 0;
         margin-right: 24px;
-        margin-bottom: 72px;
+        margin-bottom: 64px;
 
     }
 
-    .specialist-wrap:nth-child(2n-2) {
+    .specialist-wrap:nth-child(2n) {
         margin-right: 0px;
     }
 
@@ -757,7 +778,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .team-section-container {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -949,6 +970,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     width: 208px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 72px;
 }
 
 .fotter-contact-text {
@@ -965,7 +987,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 72px;
+
 }
 
 .footer-social-link-lists {
@@ -1070,6 +1092,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         width: 208px;
         margin-right: 0;
         margin-left: 0;
+        margin-bottom: 0;
     }
 
     .form-subscribe {
@@ -1102,6 +1125,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         margin-right: 24px;
+        margin-bottom: 0;
     }
 
 }
@@ -1122,6 +1146,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         width: 264px;
         margin-left: 0;
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-social-lists {
@@ -1198,13 +1223,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     width: 396px;
 }
 
-.work-example:nth-child(3n) {
-    margin-right: 0px;
+/* .work-example:nth-child(3n) {
+    margin-right: 0;
 }
 
 .work-example:nth-last-child(-n+3) {
-    margin-bottom: 0px;
-}
+    margin-bottom: 0;
+} */
 
 .work-example-descr {
     padding-left: 16px;
@@ -1298,7 +1323,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         margin-right: 0px;
     }
 
-    .work-example:nth-last-child(-n+2) {
+    .work-example:nth-last-child(-n+1) {
         margin-bottom: 0px;
     }
 
@@ -1311,7 +1336,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
     .portfolio-wrap {
-        padding-top: 172px;
+        padding-top: 100px;
         padding-bottom: 120px;
     }
 
@@ -1375,6 +1400,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     width: 408px;
     background-color: #FCFCFC;
     border-radius: 4px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 392px;
+    }
 
 }
 
